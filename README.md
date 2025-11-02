@@ -30,7 +30,7 @@ Struktur folder utama yang digunakan:
 
 Pendekatan yang dipakai: layering Data–Domain–Presentation dengan Repository Pattern, DI (GetIt), dan state management Bloc.
 
-- Dependency Injection (DI)
+- Dependency Injection (DI — teknik menyuntikkan dependensi ke komponen dari luar agar terlepas/loosely coupled, mudah diganti atau dimock, dan mudah diuji)
   - `configureDependencies()` di `core/di/injection.dart` mendaftarkan `ApiClient`, repository, dan Bloc.
   - Di `main.dart`, `MultiBlocProvider` membuat Bloc tersedia global.
 
